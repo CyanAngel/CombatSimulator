@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication2
+namespace CombatSimulator
 {
     class Program
     {
@@ -33,11 +33,11 @@ namespace ConsoleApplication2
             Trace.WriteLine(",,Remaining Resources");
             Trace.WriteLine("Initative,Survival Rate,Average HP,Average Cutting Words,Average Luck,Misty Steps,Dissonant Whispers if used");
 
-            var results = CombatSimulator.SimulateFights(numSims, startRange, new FiddleSticks(), new GiantDwarf());
+            var results = CombatSimulation.SimulateFights(numSims, startRange, new FiddleSticks(), new GiantDwarf());
 
             WriteFiddleOutput(results,"First",numSims,startRange);
 
-            results = CombatSimulator.SimulateFights(numSims, startRange, new GiantDwarf(), new FiddleSticks());
+            results = CombatSimulation.SimulateFights(numSims, startRange, new GiantDwarf(), new FiddleSticks());
 
             WriteFiddleOutput(results, "Second", numSims, startRange);
         }

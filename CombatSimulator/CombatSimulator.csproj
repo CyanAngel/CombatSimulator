@@ -7,8 +7,8 @@
     <ProjectGuid>{CC84498A-1BBF-4234-8802-501B50E2694F}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>ConsoleApplication2</RootNamespace>
-    <AssemblyName>ConsoleApplication2</AssemblyName>
+    <RootNamespace>CombatSimulator</RootNamespace>
+    <AssemblyName>CombatSimulator</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ConsoleApplication2
+namespace CombatSimulator
 {
-    class CombatSimulator
+    class CombatSimulation
     {
         public static List<Result> SimulateFights(int numoffights,int startRange, ICombatant combatant1, ICombatant combatant2) 
         {
