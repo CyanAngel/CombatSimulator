@@ -97,7 +97,7 @@ namespace CombatSimulator
             {
                 MoveRelativeEnemy(AttackRange, range);
             }
-            if (range.CurrentDistance > AttackRange && mistySteps > 0)//Bonus Action - Misty Step?
+            if (range.CurrentDistance > AttackRange && range.CurrentDistance <= 320 && mistySteps > 0)//Bonus Action - Misty Step?
             {
                 mistySteps--;
                 MoveRelativeEnemy(AttackRange, range);
@@ -184,6 +184,13 @@ namespace CombatSimulator
         public ThiaNoQuickeningOrFireballs() : base()
         {
             SP = 0;
+        }
+    }
+    class ThiaNoNothing : ThiaNoQuickeningOrFireballs
+    {
+        public ThiaNoNothing() : base()
+        {
+            sheildsLeft = 0;
         }
     }
 }

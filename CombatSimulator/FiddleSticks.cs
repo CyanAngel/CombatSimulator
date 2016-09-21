@@ -103,7 +103,7 @@ namespace CombatSimulator
             {
                 MoveRelativeEnemy(AttackRange, range);
             }
-            if (range.CurrentDistance > AttackRange && mistystep > 0)
+            if (range.CurrentDistance > AttackRange && range.CurrentDistance <= 320 && mistystep > 0)
             {
                 MoveRelativeEnemy(AttackRange, range);
                 mistystep--;
